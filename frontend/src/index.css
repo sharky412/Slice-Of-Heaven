@@ -1,19 +1,147 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Structure for the pizza card */
+.pizza-card {
+  border: 1px solid #ddd; /* Add a subtle border */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow */
+  transition: transform 0.2s; /* Add hover effect */
+  overflow: hidden; /* Keep content inside the card */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Hover effect for the card */
+.pizza-card:hover {
+  transform: scale(1.05); /* Slightly enlarge */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Enhance shadow on hover */
 }
 
-.title{
+/* Responsive image inside the card */
+.pizza-card img {
+  width: 100%; /* Full width of the card */
+  height: auto; /* Maintain aspect ratio */
+  border-bottom: 1px solid #ddd; /* Separator below image */
+}
+
+/* Card title styling */
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+/* Card text styling */
+.card-text {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 12px;
+}
+
+/* Price styling */
+.price {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+/* Button styling */
+.btn-info {
+  background-color: #17a2b8;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  width: 100%; /* Full width button */
+  padding: 10px;
+  font-size: 1rem;
+  transition: background-color 0.2s ease;
+}
+
+.btn-info:hover {
+  background-color: #138496;
+}
+
+/* Container and row adjustments */
+.container {
+  margin-top: 20px;
+}
+
+.title {
   text-align: center;
   margin-top: 20px;
-  margin-bottom: 20px ;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #333;
+}
+
+.pizza-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.pizza-card:hover {
+  transform: scale(1.05);
+}
+
+.pizza-card .card-img-top {
+  width: 100%;
+  height: 200px; /* You can adjust the height */
+  object-fit: cover; /* Ensures the image fits nicely without stretching */
+  border-bottom: 1px solid #ddd;
+}
+
+.pizza-card .card-body {
+  padding: 16px;
+}
+
+.pizza-card .card-title {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.pizza-card .card-text {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 12px;
+}
+
+.pizza-card .price {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: #000;
+}
+
+.btn {
+  width: 100%;
+  border-radius: 20px;
+}
+/* Navbar spacing fixes */
+.navbar {
+  font-size: 1.1rem;
+}
+
+.navbar .nav-link {
+  font-weight: bold;
+  color: white !important;
+}
+
+.navbar .nav-link:hover {
+  color: #ddd !important;
+}
+
+/* Logo */
+.navbar .navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Logout button */
+.navbar .btn-danger {
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

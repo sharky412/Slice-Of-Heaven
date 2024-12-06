@@ -7,10 +7,10 @@ import Home from './pages/Home';
 import Orders from './pages/Orders';
 import Cart from './pages/Cart';
 import { ToastContainer, toast } from 'react-toastify';
-  import 'react-toastify/dist/ReactToastify.css';
-  import './style.css';
+import 'react-toastify/dist/ReactToastify.css';
+import './style.css';
 
-
+  
 function App() {
   return (
     <div className='container-fluid'>
