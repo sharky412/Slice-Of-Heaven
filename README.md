@@ -148,5 +148,3 @@ CORS_ORIGIN=http://localhost:3000
 
 This project is licensed under the MIT License. Feel free to use and modify it as needed.
 ```
-
-Replace placeholders like `your-username`, `your_mysql_user`, `your_mysql_password`, and `your_jwt_secret` with actual values based on your project setup.
