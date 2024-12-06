@@ -33,6 +33,24 @@ export async function placeOrder(items, totalAmount) {
     }
 }
 
+export async function deleteOrder(orderId) {
+    try {
+        const url = createUrl(`order/${orderId}`);
+      
+        const headers = {
+            headers: {
+                token: sessionStorage['token']
+            },
+        }
+
+        const response = await axios.delete(url, headers);
+        return response.data;
+    } catch (ex) {
+        console.error('Error deleting order:', ex);
+        return createError(ex);
+    }
+}
+
 
 export async function getAllOrder() {
     try {
@@ -54,3 +72,18 @@ export async function getAllOrder() {
     }
 }
 
+export async function getOrderDetails(orderId) {
+    try {
+        const url = createUrl(`order/details/${orderId}`);
+        const headers = {
+            headers: {
+                token: sessionStorage['token'],
+            },
+        };
+        const response = await axios.get(url, headers);
+        return response.data;
+    } catch (ex) {
+        console.error("Error fetching order details:", ex);
+        return createError(ex);
+    }
+}
