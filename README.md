@@ -33,7 +33,7 @@ Here are some screenshots of the application:
 
 ### Prerequisites
 - Node.js installed
-- MongoDB running locally or a connection string to a remote MongoDB server
+- MySQL running locally or a connection string to a remote MySQL server
 
 ### Steps
 1. Clone the repository:
