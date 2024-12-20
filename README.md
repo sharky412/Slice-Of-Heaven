@@ -37,7 +37,7 @@ Here are some screenshots of the application:
 
 ### Steps
 1. Clone the repository:
-   git clone https://github.com/your-username/slice-of-heaven.git
+   git clone https://github.com/sharky412/slice-of-heaven.git
 
 2. Navigate to the project directory:
    cd slice-of-heaven
