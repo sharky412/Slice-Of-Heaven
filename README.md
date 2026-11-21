@@ -9,6 +9,7 @@
 ![Node.js](https://img.shields.io/badge/Node.js-Express-339933?logo=nodedotjs&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-database-4479A1?logo=mysql&logoColor=white)
 ![JWT](https://img.shields.io/badge/auth-JWT-000000?logo=jsonwebtokens)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 **Live demo:** https://slice-of-heaven-delta.vercel.app
 
@@ -91,3 +92,7 @@ frontend/
     ├── features/     # Redux cart slice
     └── services/     # API clients
 ```
+
+## License
+
+Released under the [MIT License](LICENSE).
