@@ -43,7 +43,7 @@ cd Slice-Of-Heaven
 
 ### 2. Set up the database
 
-Run `Backend/db.sql` against your MySQL server. It creates the `pizza_shop` tables and seed data. Then copy `Backend/.env.example` to `Backend/.env` and fill in your MySQL connection details (`DB_HOST`, `DB_USER`, `DB_PASSWORD`, `DB_NAME`).
+Run `Backend/db.sql` against your MySQL server. It creates the `pizza_shop` tables and seed data. Then copy `Backend/.env.example` to `Backend/.env` and fill in your MySQL connection details (`DB_HOST`, `DB_USER`, `DB_PASSWORD`, `DB_NAME`) and a `JWT_SECRET` for signing login tokens.
 
 ### 3. Start the backend (port 4000)
 
