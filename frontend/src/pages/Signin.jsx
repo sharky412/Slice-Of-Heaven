@@ -11,13 +11,12 @@ export function Signin() {
   const navigate = useNavigate();
 
   const onSignin = async () => {
-    if (email.length ==0) {
+    if (email.length === 0) {
       toast.warn("Please enter your email");
     } else if (password.length === 0) {
       toast.warn("Please enter your password");
     } else {
       const result = await signinUser(email, password);
-      {
          if (result['status'] === 'success') {
           //cache the token
             const token=result['data']['token']
@@ -28,7 +27,6 @@ export function Signin() {
         } else {
              toast.error(result['error'])
          }
-      }
     }
   };
 

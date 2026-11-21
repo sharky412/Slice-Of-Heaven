@@ -15,37 +15,35 @@ export function Signup() {
     const navigate=useNavigate()
 
     const onSignup = async () => {
-        if (firstName.length == 0) {
+        if (firstName.length === 0) {
             toast.warn('Please enter your first name')
         }
-        else if (lastName.length == 0) {
+        else if (lastName.length === 0) {
             toast.warn('Please enter your last name')
         }
-        else if (email.length == 0) {
+        else if (email.length === 0) {
             toast.warn('Please enter your email')
         }
-        else if (password.length == 0) {
+        else if (password.length === 0) {
             toast.warn('Please enter your password')
         }
         else if (password.length < 8) {
             toast.warn('Password should be at least 8 characters long')
         }
-        else if (password != confirmPassword) {
+        else if (password !== confirmPassword) {
             toast.warn('Passwords do not match')
         }
         else {
 
             //make the api call
             const result = await signupUser(firstName, lastName, email, password)
-            {
-                if ((result['status'] == 'success')) {
+                if ((result['status'] === 'success')) {
                     toast.success('Successful register the User')
                     navigate('/')
                 }
                 else {
                     toast.error(result['error'])
                 }
-            }
         }
  }
 

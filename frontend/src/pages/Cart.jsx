@@ -30,7 +30,7 @@ export function Cart() {
     console.log('Token before API call:', token); 
         try {
             const result = await placeOrder(cart.items, total);
-            if (result.status == 'success') {
+            if (result.status === 'success') {
                 dispatch(clear());
                 toast.success("Successfully placed the order");
             } else {
@@ -46,7 +46,7 @@ export function Cart() {
             <Navbar />
             <div className="container">
                 <h1 className='title'>Cart</h1>
-                {cart.items.length == 0 &&    (
+                {cart.items.length === 0 &&    (
                     <h3 style={{ textAlign: 'center' }}>There are no items in the cart</h3>
                 ) }
                 {cart.items.length >0 && (
