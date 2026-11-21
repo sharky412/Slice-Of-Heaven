@@ -23,7 +23,7 @@
 
 ## Tech stack
 
-- **Frontend**: React 18, Redux Toolkit, React Router, React Bootstrap / Bootstrap 5, Sass, Axios, React Toastify
+- **Frontend**: React 18 (built with Vite), Redux Toolkit, React Router, React Bootstrap / Bootstrap 5, Sass, Axios, React Toastify
 - **Backend**: Node.js, Express.js, mysql2, jsonwebtoken, crypto-js
 - **Database**: MySQL
 
@@ -31,7 +31,8 @@
 
 ### Prerequisites
 
-- Node.js
+- Node.js 20.19+ or 22.12+ (required by Vite)
+- Yarn 1 for the frontend
 - A MySQL server, either running locally or remote
 
 ### 1. Clone the repository
@@ -57,11 +58,13 @@ node server.js
 
 ```bash
 cd ../frontend
-npm install
-npm start
+yarn install
+yarn dev
 ```
 
-Then open http://localhost:3000. The frontend calls the API at `http://localhost:4000`, which is set in `frontend/src/config.js`.
+Then open http://localhost:3000. The frontend calls the API at `http://localhost:4000` by default; set `VITE_API_URL` (for example in `frontend/.env.local`) to point it elsewhere. See `frontend/src/config.js`.
+
+Other frontend scripts: `yarn build` (production build into `frontend/build`) and `yarn preview` (serve that build locally).
 
 ## API overview
 
